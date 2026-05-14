@@ -1,0 +1,7 @@
+board:
+  name: our_board
+  full_name: Our Board
+  vendor: nordic
+  socs:
+  - name: 'nrf5340'
+

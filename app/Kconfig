@@ -110,4 +110,11 @@ endif  # LED_ADVANCED
 
 endif  # LED_SUBSYSTEM
 
+config BOARD_OUR_BOARD
+select BOARD_NRF5340DK_NRF5340_CPUAPP if BOARD_OUR_BOARD
+    bool "Our custom board"
+    help
+      Enable support for our custom board. This will pull in the
+      necessary drivers and configurations to run Zephyr on it.
+
 source "Kconfig.zephyr"		
