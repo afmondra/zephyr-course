@@ -117,4 +117,7 @@ select BOARD_NRF5340DK_NRF5340_CPUAPP if BOARD_OUR_BOARD
       Enable support for our custom board. This will pull in the
       necessary drivers and configurations to run Zephyr on it.
 
-source "Kconfig.zephyr"		
+#rsource "drivers/Kconfig"
+
+source "Kconfig.zephyr"
+rsource "drivers/our_driver/Kconfig"

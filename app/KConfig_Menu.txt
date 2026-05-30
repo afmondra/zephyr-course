@@ -1,8 +1,0 @@
-[*] LED Subsystem  --->
-     LED blink sleep time (1s (medium))  --->
-     [ ] Advanced LED settings  --->
-          (100) LED brightness (0-100)
-          (500) LED fade duration (ms)
-          Expert settings  --->
-               [ ] Enable LED debugging
-               [ ] Custom blink pattern
