@@ -3,6 +3,8 @@
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
 
+#include "drivers/our_driver/our_driver.h"
+
 LOG_MODULE_REGISTER(main, LOG_LEVEL_INF);
 
 #define SLEEP_TIME_MS 1000
@@ -49,6 +51,9 @@ int main(void)
 
 	printk("Heartbeat LED started — period: %d ms\n",
 			CONFIG_APP_HEARTBEAT_PERIOD_MS);
+
+	// --- Custom extension API call: change blink_interval_ms in the data struct ---
+	our_driver_set_blink_interval_ms(driver, 250);
 
 	while (1) {
 		// Turns LED ON
