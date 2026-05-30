@@ -1,0 +1,11 @@
+description: LED exposed as a sensor device (lecture driver)
+
+compatible: "our,driver"
+
+include: base.yaml
+
+properties:
+  gpios:
+    type: phandle-array
+    required: true
+    description: GPIO pin connected to the on-board LED.

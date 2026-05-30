@@ -5,10 +5,6 @@
 
 LOG_MODULE_REGISTER(main, LOG_LEVEL_INF);
 
-// #define LED_SENSOR_NODE DT_NODELABEL(led_sensor0)
-
-// BUILD_ASSERT(DT_NODE_HAS_STATUS(LED_SENSOR_NODE, okay),
-// 	     "led_sensor0 node is not enabled");
 #define SLEEP_TIME_MS 1000
 
 /* The devicetree node identifier for the "led0" alias. */
@@ -16,6 +12,9 @@ LOG_MODULE_REGISTER(main, LOG_LEVEL_INF);
 
 //static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED_NODE, gpios);
 static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED_NODE, gpios);
+
+const struct device *driver = DEVICE_DT_GET(DT_NODELABEL(our_driver0));
+struct sensor_value val;
 
 namespace {
 	void test() {
@@ -52,10 +51,16 @@ int main(void)
 			CONFIG_APP_HEARTBEAT_PERIOD_MS);
 
 	while (1) {
-        if (gpio_pin_toggle_dt(&led) < 0) return 0;
+		// Turns LED ON
+		sensor_sample_fetch(driver);
+		k_msleep(1000);
+		// Turns LED OFF
+		sensor_channel_get(driver, SENSOR_CHAN_AMBIENT_TEMP, &val);
+		k_msleep(1000);
+/*         if (gpio_pin_toggle_dt(&led) < 0) return 0;
         led_state = !led_state;
         LOG_INF("LED state: %s", led_state ? "ON" : "OFF");
-        k_msleep(SLEEP_TIME_MS);
+        k_msleep(SLEEP_TIME_MS); */
 	}
 
 	return 0;
