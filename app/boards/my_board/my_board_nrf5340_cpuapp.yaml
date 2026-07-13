@@ -1,0 +1,12 @@
+identifier: my_board
+name: NRF5340-DK-NRF5340-network-MCU
+type: mcu
+arch: arm
+toolchain:
+  - gnuarmemb
+  - zephyr
+ram: 64
+flash: 256
+supported:
+  - gpio
+vendor: nordic

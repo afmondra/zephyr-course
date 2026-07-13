@@ -1,0 +1,500 @@
+{
+    "environment":{
+        "os":"Darwin",
+        "zephyr_version":"v4.4.0-2553-g12782f1c9d77",
+        "toolchain":"zephyr/gnu",
+        "commit_date":"2026-05-13T14:42:44+02:00",
+        "run_date":"2026-07-09T00:44:43+00:00",
+        "options":{
+            "help":null,
+            "zephyr_base":null,
+            "quiet":0,
+            "command":"twister",
+            "testsuite_root":[
+                "tests/calculator"
+            ]
+        }
+    },
+    "testsuites":[
+        {
+            "name":"example.unit.calculator",
+            "arch":"arm",
+            "platform":"nrf5340dk/nrf5340/cpuapp",
+            "path":"../tests/calculator",
+            "run_id":"df765dd6a4e8017279dba4d5ba295ead",
+            "runnable":false,
+            "retries":0,
+            "toolchain":"zephyr/gnu",
+            "status":"not run",
+            "reason":null,
+            "execution_time":"0.00",
+            "build_time":"99.59",
+            "testcases":[
+                {
+                    "identifier":"example.unit.calculator.calculator_edge_cases.chained_operations",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_div.negative_dividend_truncation",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_div.null_pointer",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_div.divide_by_zero",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_div.integer_truncation",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_div.exact_division",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_mul.null_pointer",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_mul.by_zero",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_mul.negative_numbers",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_mul.positive_numbers",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_sub.null_pointer",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_sub.negative_result",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_sub.positive_result",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_add.null_pointer",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_add.zero",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_add.mixed_signs",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_add.negative_numbers",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_add.positive_numbers",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_last_result.reset_clears_cache",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_last_result.failed_op_does_not_update",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_last_result.overwrite_on_second_op",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_last_result.add_updates_cache",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_last_result.null_pointer",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.calculator_last_result.no_result_before_first_op",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                }
+            ]
+        },
+        {
+            "name":"example.unit.calculator.ordered",
+            "arch":"arm",
+            "platform":"nrf5340dk/nrf5340/cpuapp",
+            "path":"../tests/calculator",
+            "run_id":"319ba7a308c69014c71162b901de95f0",
+            "runnable":false,
+            "retries":0,
+            "toolchain":"zephyr/gnu",
+            "status":"not run",
+            "reason":null,
+            "execution_time":"0.00",
+            "build_time":"99.57",
+            "testcases":[
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_edge_cases.chained_operations",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_div.negative_dividend_truncation",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_div.null_pointer",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_div.divide_by_zero",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_div.integer_truncation",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_div.exact_division",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_mul.null_pointer",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_mul.by_zero",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_mul.negative_numbers",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_mul.positive_numbers",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_sub.null_pointer",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_sub.negative_result",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_sub.positive_result",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_add.null_pointer",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_add.zero",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_add.mixed_signs",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_add.negative_numbers",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_add.positive_numbers",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_last_result.reset_clears_cache",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_last_result.failed_op_does_not_update",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_last_result.overwrite_on_second_op",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_last_result.add_updates_cache",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_last_result.null_pointer",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.ordered.calculator_last_result.no_result_before_first_op",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                }
+            ]
+        },
+        {
+            "name":"example.unit.calculator.hw",
+            "arch":"arm",
+            "platform":"nrf5340dk/nrf5340/cpuapp",
+            "path":"../tests/calculator",
+            "run_id":"609ae77280c30fe648bf9b6675298ff7",
+            "runnable":false,
+            "retries":0,
+            "toolchain":"zephyr/gnu",
+            "status":"not run",
+            "reason":null,
+            "execution_time":"0.00",
+            "build_time":"99.60",
+            "testcases":[
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_edge_cases.chained_operations",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_div.negative_dividend_truncation",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_div.null_pointer",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_div.divide_by_zero",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_div.integer_truncation",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_div.exact_division",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_mul.null_pointer",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_mul.by_zero",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_mul.negative_numbers",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_mul.positive_numbers",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_sub.null_pointer",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_sub.negative_result",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_sub.positive_result",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_add.null_pointer",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_add.zero",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_add.mixed_signs",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_add.negative_numbers",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_add.positive_numbers",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_last_result.reset_clears_cache",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_last_result.failed_op_does_not_update",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_last_result.overwrite_on_second_op",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_last_result.add_updates_cache",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_last_result.null_pointer",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                },
+                {
+                    "identifier":"example.unit.calculator.hw.calculator_last_result.no_result_before_first_op",
+                    "execution_time":"0.00",
+                    "status":"not run",
+                    "reason":"Test was built only"
+                }
+            ]
+        }
+    ]
+}

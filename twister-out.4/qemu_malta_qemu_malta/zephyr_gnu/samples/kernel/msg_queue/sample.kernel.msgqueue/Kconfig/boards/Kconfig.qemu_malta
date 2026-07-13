@@ -1,0 +1,2 @@
+# Load board Kconfig descriptions.
+osource "/Users/bytelight/zephyr-course/zephyr/boards/qemu/malta/Kconfig.qemu_malta"

@@ -1,0 +1,2 @@
+# Load Sysbuild board Kconfig descriptions.
+osource "/Users/bytelight/zephyr-course/zephyr/boards/qemu/malta/Kconfig.sysbuild"

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/bytelight/zephyr-course/twister-out/qemu_cortex_m0_nrf51822/zephyr_gnu/samples/kernel/msg_queue/sample.kernel.msgqueue/CMakeFiles/CMakeScratch/TryCompile-92hsch/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

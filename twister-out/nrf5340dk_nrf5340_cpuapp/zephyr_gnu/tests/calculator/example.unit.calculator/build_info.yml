@@ -1,0 +1,58 @@
+cmake:
+  application:
+    configuration-dir: '/Users/bytelight/zephyr-course/tests/calculator'
+    source-dir: '/Users/bytelight/zephyr-course/tests/calculator'
+  board:
+    name: 'nrf5340dk'
+    path:
+     - '/Users/bytelight/zephyr-course/zephyr/boards/nordic/nrf5340dk'
+    qualifiers: 'nrf5340/cpuapp'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/Users/bytelight/zephyr-course/zephyr/dts/bindings'
+    files:
+     - '/Users/bytelight/zephyr-course/zephyr/boards/nordic/nrf5340dk/nrf5340dk_nrf5340_cpuapp.dts'
+    include-dirs:
+     - '/Users/bytelight/zephyr-course/modules/hal/ambiq/dts'
+     - '/Users/bytelight/zephyr-course/modules/hal/atmel/include'
+     - '/Users/bytelight/zephyr-course/modules/hal/bouffalolab/include'
+     - '/Users/bytelight/zephyr-course/modules/hal/bouffalolab/include/zephyr'
+     - '/Users/bytelight/zephyr-course/modules/hal/gigadevice/include'
+     - '/Users/bytelight/zephyr-course/modules/hal/microchip/include'
+     - '/Users/bytelight/zephyr-course/modules/hal/microchip/dts'
+     - '/Users/bytelight/zephyr-course/modules/hal/nuvoton/dts'
+     - '/Users/bytelight/zephyr-course/modules/hal/nxp/dts'
+     - '/Users/bytelight/zephyr-course/modules/hal/stm32/dts'
+     - '/Users/bytelight/zephyr-course/modules/hal/ti/dts'
+     - '/Users/bytelight/zephyr-course/zephyr/include'
+     - '/Users/bytelight/zephyr-course/zephyr/include/zephyr'
+     - '/Users/bytelight/zephyr-course/zephyr/dts/common'
+     - '/Users/bytelight/zephyr-course/zephyr/dts/vendor'
+     - '/Users/bytelight/zephyr-course/zephyr/dts/rx'
+     - '/Users/bytelight/zephyr-course/zephyr/dts/x86'
+     - '/Users/bytelight/zephyr-course/zephyr/dts/xtensa'
+     - '/Users/bytelight/zephyr-course/zephyr/dts/sparc'
+     - '/Users/bytelight/zephyr-course/zephyr/dts/riscv'
+     - '/Users/bytelight/zephyr-course/zephyr/dts/posix'
+     - '/Users/bytelight/zephyr-course/zephyr/dts/arm64'
+     - '/Users/bytelight/zephyr-course/zephyr/dts/arm'
+     - '/Users/bytelight/zephyr-course/zephyr/dts/arc'
+     - '/Users/bytelight/zephyr-course/zephyr/dts'
+  kconfig:
+    files:
+     - '/Users/bytelight/zephyr-course/zephyr/boards/nordic/nrf5340dk/nrf5340dk_nrf5340_cpuapp_defconfig'
+     - '/Users/bytelight/zephyr-course/tests/calculator/prj.conf'
+     - '/Users/bytelight/zephyr-course/twister-out/nrf5340dk_nrf5340_cpuapp/zephyr_gnu/tests/calculator/example.unit.calculator/zephyr/misc/generated/extra_kconfig_options.conf'
+    user-files:
+     - '/Users/bytelight/zephyr-course/tests/calculator/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/Users/bytelight/zephyr-sdk-1.0.1'
+  vendor-specific:
+    nordic:
+      svdfile: '/Users/bytelight/zephyr-course/modules/hal/nordic/nrfx/bsp/stable/mdk/nrf5340_application.svd'
+  zephyr:
+    version: '4.4.99'
+    zephyr-base: '/Users/bytelight/zephyr-course/zephyr'
+version: '0.1.0'
