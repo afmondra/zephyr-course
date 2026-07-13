@@ -1,10 +1,8 @@
 <testsuites>
-	<testsuite name="nrf5340dk/nrf5340/cpuapp" timestamp="2026-07-08T20:47:06.953655" time="0.0" tests="3" failures="0" errors="0" skipped="0">
+	<testsuite name="native_sim/native" timestamp="2026-07-13T16:28:38.443467" time="0.07" tests="1" failures="0" errors="0" skipped="0">
 		<properties>
-			<property name="version" value="v4.4.0-2553-g12782f1c9d77" />
+			<property name="version" value="v4.2.0" />
 		</properties>
-		<testcase classname="nrf5340dk/nrf5340/cpuapp:example.unit.calculator" name="example.unit.calculator" time="0.00" />
-		<testcase classname="nrf5340dk/nrf5340/cpuapp:example.unit.calculator.ordered" name="example.unit.calculator.ordered" time="0.00" />
-		<testcase classname="nrf5340dk/nrf5340/cpuapp:example.unit.calculator.hw" name="example.unit.calculator.hw" time="0.00" />
+		<testcase classname="native_sim/native:homework.unit.ring_buf" name="homework.unit.ring_buf" time="0.07" />
 	</testsuite>
 </testsuites>

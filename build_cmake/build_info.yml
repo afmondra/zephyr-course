@@ -1,0 +1,57 @@
+cmake:
+  application:
+    configuration-dir: '/home/afmondra/zephyr-course/app'
+    source-dir: '/home/afmondra/zephyr-course/app'
+  board:
+    name: 'nrf5340dk'
+    path:
+     - '/home/afmondra/zephyrproject/zephyr/boards/nordic/nrf5340dk'
+    qualifiers: 'nrf5340/cpuapp'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/afmondra/zephyrproject/zephyr/dts/bindings'
+    files:
+     - '/home/afmondra/zephyrproject/zephyr/boards/nordic/nrf5340dk/nrf5340dk_nrf5340_cpuapp.dts'
+    include-dirs:
+     - '/home/afmondra/zephyrproject/modules/hal/ambiq/dts'
+     - '/home/afmondra/zephyrproject/modules/hal/atmel/include'
+     - '/home/afmondra/zephyrproject/modules/hal/bouffalolab/include'
+     - '/home/afmondra/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - '/home/afmondra/zephyrproject/modules/hal/gigadevice/include'
+     - '/home/afmondra/zephyrproject/modules/hal/microchip/include'
+     - '/home/afmondra/zephyrproject/modules/hal/microchip/dts'
+     - '/home/afmondra/zephyrproject/modules/hal/nuvoton/dts'
+     - '/home/afmondra/zephyrproject/modules/hal/nxp/dts'
+     - '/home/afmondra/zephyrproject/modules/hal/stm32/dts'
+     - '/home/afmondra/zephyrproject/modules/hal/ti/dts'
+     - '/home/afmondra/zephyrproject/zephyr/include'
+     - '/home/afmondra/zephyrproject/zephyr/include/zephyr'
+     - '/home/afmondra/zephyrproject/zephyr/dts/common'
+     - '/home/afmondra/zephyrproject/zephyr/dts/vendor'
+     - '/home/afmondra/zephyrproject/zephyr/dts/rx'
+     - '/home/afmondra/zephyrproject/zephyr/dts/x86'
+     - '/home/afmondra/zephyrproject/zephyr/dts/xtensa'
+     - '/home/afmondra/zephyrproject/zephyr/dts/sparc'
+     - '/home/afmondra/zephyrproject/zephyr/dts/riscv'
+     - '/home/afmondra/zephyrproject/zephyr/dts/posix'
+     - '/home/afmondra/zephyrproject/zephyr/dts/arm64'
+     - '/home/afmondra/zephyrproject/zephyr/dts/arm'
+     - '/home/afmondra/zephyrproject/zephyr/dts/arc'
+     - '/home/afmondra/zephyrproject/zephyr/dts'
+  kconfig:
+    files:
+     - '/home/afmondra/zephyrproject/zephyr/boards/nordic/nrf5340dk/nrf5340dk_nrf5340_cpuapp_defconfig'
+     - '/home/afmondra/zephyr-course/app/prj.conf'
+    user-files:
+     - '/home/afmondra/zephyr-course/app/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/afmondra/zephyr-sdk-0.17.4'
+  vendor-specific:
+    nordic:
+      svdfile: '/home/afmondra/zephyrproject/modules/hal/nordic/nrfx/mdk/nrf5340_application.svd'
+  zephyr:
+    version: '4.2.99'
+    zephyr-base: '/home/afmondra/zephyrproject/zephyr'
+version: '0.1.0'
