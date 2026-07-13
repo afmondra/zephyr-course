@@ -1,0 +1,2 @@
+# Load board Kconfig descriptions.
+osource "/Users/bytelight/zephyr-course/zephyr/boards/qemu/leon3/Kconfig.qemu_leon3"

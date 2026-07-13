@@ -1,0 +1,22 @@
+{
+    "environment":{
+        "os":"Darwin",
+        "zephyr_version":"v4.4.0-2553-g12782f1c9d77",
+        "toolchain":"zephyr/gnu",
+        "commit_date":"2026-05-13T14:42:44+02:00",
+        "run_date":"2026-07-09T00:32:35+00:00",
+        "options":{
+            "help":null,
+            "zephyr_base":null,
+            "quiet":0,
+            "command":"twister",
+            "testsuite_root":[
+                "tests/calculator"
+            ],
+            "platform":[
+                "native_sim"
+            ]
+        }
+    },
+    "testsuites":[]
+}

@@ -1,0 +1,2 @@
+# Load board Kconfig descriptions.
+osource "/Users/bytelight/zephyr-course/zephyr/boards/qemu/rx/Kconfig.qemu_rx"

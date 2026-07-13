@@ -1,0 +1,10 @@
+<testsuites>
+	<testsuite name="nrf5340dk/nrf5340/cpuapp" timestamp="2026-07-08T20:44:45.254240" time="0.0" tests="3" failures="0" errors="0" skipped="0">
+		<properties>
+			<property name="version" value="v4.4.0-2553-g12782f1c9d77" />
+		</properties>
+		<testcase classname="nrf5340dk/nrf5340/cpuapp:example.unit.calculator" name="example.unit.calculator" time="0.00" />
+		<testcase classname="nrf5340dk/nrf5340/cpuapp:example.unit.calculator.ordered" name="example.unit.calculator.ordered" time="0.00" />
+		<testcase classname="nrf5340dk/nrf5340/cpuapp:example.unit.calculator.hw" name="example.unit.calculator.hw" time="0.00" />
+	</testsuite>
+</testsuites>

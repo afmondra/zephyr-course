@@ -1,0 +1,91 @@
+/dts-v1/;
+
+/* node '/' defined in zephyr/dts/common/skeleton.dtsi:9 */
+/ {
+	#address-cells = < 0x1 >;       /* in zephyr/dts/common/skeleton.dtsi:10 */
+	#size-cells = < 0x1 >;          /* in zephyr/dts/common/skeleton.dtsi:11 */
+	model = "QEMU ARC HS";          /* in zephyr/boards/qemu/arc/qemu_arc_qemu_arc_hs.dts:12 */
+	compatible = "snps,qemu-archs"; /* in zephyr/boards/qemu/arc/qemu_arc_qemu_arc_hs.dts:13 */
+
+	/* node '/chosen' defined in zephyr/dts/common/skeleton.dtsi:13 */
+	chosen {
+		zephyr,sram = &sram0;               /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:71 */
+		zephyr,flash = &flash0;             /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:72 */
+		zephyr,console = &ns16550_uart0;    /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:73 */
+		zephyr,shell-uart = &ns16550_uart0; /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:74 */
+		zephyr,uart-pipe = &ns16550_uart1;  /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:75 */
+	};
+
+	/* node '/aliases' defined in zephyr/dts/common/skeleton.dtsi:15 */
+	aliases {
+	};
+
+	/* node '/cpus' defined in zephyr/boards/qemu/arc/qemu_arc.dtsi:16 */
+	cpus {
+		#address-cells = < 0x1 >; /* in zephyr/boards/qemu/arc/qemu_arc_qemu_arc_hs.dts:16 */
+		#size-cells = < 0x0 >;    /* in zephyr/boards/qemu/arc/qemu_arc_qemu_arc_hs.dts:17 */
+
+		/* node '/cpus/cpu@0' defined in zephyr/boards/qemu/arc/qemu_arc_qemu_arc_hs.dts:19 */
+		cpu@0 {
+			device_type = "cpu";       /* in zephyr/boards/qemu/arc/qemu_arc_qemu_arc_hs.dts:20 */
+			compatible = "snps,archs"; /* in zephyr/boards/qemu/arc/qemu_arc_qemu_arc_hs.dts:21 */
+			reg = < 0x0 >;             /* in zephyr/boards/qemu/arc/qemu_arc_qemu_arc_hs.dts:22 */
+		};
+	};
+
+	/* node '/arcv2-intc' defined in zephyr/boards/qemu/arc/qemu_arc.dtsi:21 */
+	intc: arcv2-intc {
+		compatible = "snps,arcv2-intc"; /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:22 */
+		interrupt-controller;           /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:23 */
+		#interrupt-cells = < 0x2 >;     /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:24 */
+		phandle = < 0x1 >;              /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:30 */
+	};
+
+	/* node '/timer0' defined in zephyr/boards/qemu/arc/qemu_arc.dtsi:27 */
+	timer0: timer0 {
+		compatible = "snps,arc-timer"; /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:28 */
+		interrupts = < 0x10 0x1 >;     /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:29 */
+		interrupt-parent = < &intc >;  /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:30 */
+	};
+
+	/* node '/timer1' defined in zephyr/boards/qemu/arc/qemu_arc.dtsi:33 */
+	timer1: timer1 {
+		compatible = "snps,arc-timer"; /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:34 */
+		interrupts = < 0x11 0x1 >;     /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:35 */
+		interrupt-parent = < &intc >;  /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:36 */
+	};
+
+	/* node '/flash@80000000' defined in zephyr/boards/qemu/arc/qemu_arc.dtsi:40 */
+	flash0: flash@80000000 {
+		compatible = "soc-nv-flash";   /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:41 */
+		reg = < 0x80000000 0x400000 >; /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:42 */
+	};
+
+	/* node '/sram@80400000' defined in zephyr/boards/qemu/arc/qemu_arc.dtsi:45 */
+	sram0: sram@80400000 {
+		device_type = "memory";        /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:46 */
+		reg = < 0x80400000 0x400000 >; /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:47 */
+	};
+
+	/* node '/uart@f0000000' defined in zephyr/boards/qemu/arc/qemu_arc.dtsi:50 */
+	ns16550_uart0: uart@f0000000 {
+		compatible = "ns16550";         /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:51 */
+		clock-frequency = < 0x989680 >; /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:52 */
+		reg = < 0xf0000000 0x400 >;     /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:53 */
+		current-speed = < 0x1c200 >;    /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:54 */
+		interrupt-parent = < &intc >;   /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:55 */
+		interrupts = < 0x18 0x1 >;      /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:56 */
+		reg-shift = < 0x2 >;            /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:57 */
+	};
+
+	/* node '/uart@f0002000' defined in zephyr/boards/qemu/arc/qemu_arc.dtsi:60 */
+	ns16550_uart1: uart@f0002000 {
+		compatible = "ns16550";         /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:61 */
+		clock-frequency = < 0x989680 >; /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:62 */
+		reg = < 0xf0002000 0x400 >;     /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:63 */
+		current-speed = < 0x1c200 >;    /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:64 */
+		interrupt-parent = < &intc >;   /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:65 */
+		interrupts = < 0x19 0x1 >;      /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:66 */
+		reg-shift = < 0x2 >;            /* in zephyr/boards/qemu/arc/qemu_arc.dtsi:67 */
+	};
+};

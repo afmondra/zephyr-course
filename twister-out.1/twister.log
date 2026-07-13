@@ -1,0 +1,31 @@
+2026-07-08 17:58:06,246 - twister - INFO - Using Ninja..
+2026-07-08 17:58:06,427 - twister - INFO - Zephyr version: v4.4.0-2553-g12782f1c9d77
+2026-07-08 17:58:06,458 - twister - DEBUG - Running cmake script /Users/bytelight/zephyr-course/zephyr/cmake/verify-toolchain.cmake
+2026-07-08 17:58:06,461 - twister - DEBUG - Calling cmake: /opt/homebrew/bin/cmake -DFORMAT=json -P /Users/bytelight/zephyr-course/zephyr/cmake/verify-toolchain.cmake
+2026-07-08 17:58:07,512 - twister - DEBUG - Finished running /Users/bytelight/zephyr-course/zephyr/cmake/verify-toolchain.cmake
+2026-07-08 17:58:07,512 - twister - INFO - Using 'zephyr/gnu' toolchain variant.
+2026-07-08 17:58:14,298 - twister - DEBUG - Reading testsuite configuration files under /Users/bytelight/zephyr-course/tests/ring_buf...
+2026-07-08 17:58:14,298 - twister - DEBUG - Found possible testsuite in /Users/bytelight/zephyr-course/tests/ring_buf
+2026-07-08 17:58:14,318 - twister - DEBUG - No duplicates found.
+2026-07-08 17:58:14,319 - twister - DEBUG -  platform filter: ['native_sim']
+2026-07-08 17:58:14,319 - twister - DEBUG - platform_pattern: []
+2026-07-08 17:58:14,319 - twister - DEBUG -    vendor filter: []
+2026-07-08 17:58:14,319 - twister - DEBUG -      arch_filter: None
+2026-07-08 17:58:14,319 - twister - DEBUG -       tag_filter: None
+2026-07-08 17:58:14,319 - twister - DEBUG -      exclude_tag: None
+2026-07-08 17:58:14,319 - twister - DEBUG - Checking platform filter: ['native_sim']
+2026-07-08 17:58:14,319 - twister - INFO - Building initial testsuite list...
+2026-07-08 17:58:14,320 - twister - INFO - Built testsuite list in 0.00 seconds
+2026-07-08 17:58:14,320 - twister - INFO - Writing JSON report /Users/bytelight/zephyr-course/twister-out/testplan.json
+2026-07-08 17:58:14,366 - twister - INFO - Adding tasks to the queue...
+2026-07-08 17:58:14,366 - twister - INFO - Added initial list of jobs to queue
+2026-07-08 17:58:14,384 - twister - DEBUG - Launched 10 jobs
+2026-07-08 17:58:14,394 - twister - INFO - 1 test scenarios (1 configurations) selected, 1 configurations filtered (1 by static filter, 0 at runtime).
+2026-07-08 17:58:14,398 - twister - INFO - [32m0 of 0[39m executed test configurations passed (0.00%), 0 built (not run), 0 failed, 0 errored, with no warnings in 8.15 seconds.
+2026-07-08 17:58:14,398 - twister - INFO - 0 of 0 executed test cases passed (0.00%) on 0 out of total 1518 platforms (0.00%).
+2026-07-08 17:58:14,398 - twister - INFO - [32m0[39m test configurations executed on platforms, [36m0[39m test configurations were only built.
+2026-07-08 17:58:14,398 - twister - INFO - Saving reports...
+2026-07-08 17:58:14,398 - twister - INFO - Writing JSON report /Users/bytelight/zephyr-course/twister-out/twister.json
+2026-07-08 17:58:14,399 - twister - INFO - Writing xunit report /Users/bytelight/zephyr-course/twister-out/twister.xml...
+2026-07-08 17:58:14,402 - twister - INFO - Writing xunit report /Users/bytelight/zephyr-course/twister-out/twister_report.xml...
+2026-07-08 17:58:14,403 - twister - INFO - Run completed

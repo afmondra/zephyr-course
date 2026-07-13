@@ -1,0 +1,71 @@
+# 0 "/Users/bytelight/zephyr-course/zephyr/misc/empty_file.c"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "/Users/bytelight/zephyr-course/zephyr/boards/qemu/malta/qemu_malta.dts" 1
+
+
+
+
+
+
+/dts-v1/;
+
+# 1 "/Users/bytelight/zephyr-course/zephyr/dts/common/skeleton.dtsi" 1 3 4
+# 9 "/Users/bytelight/zephyr-course/zephyr/dts/common/skeleton.dtsi" 3 4
+/ {
+ #address-cells = <1>;
+ #size-cells = <1>;
+
+ chosen {};
+
+ aliases {};
+};
+# 10 "/Users/bytelight/zephyr-course/zephyr/boards/qemu/malta/qemu_malta.dts" 2
+
+/ {
+ model = "Qemu MIPS Malta";
+ compatible = "qemu,malta";
+
+ chosen {
+  zephyr,sram = &sram0;
+  zephyr,console = &uart2;
+  zephyr,shell-uart = &uart2;
+ };
+
+ cpus {
+  #address-cells = <1>;
+  #size-cells = <0>;
+
+  cpu@0 {
+   device_type = "cpu";
+   compatible = "mti,mips24Kc";
+   reg = <0>;
+
+   cpu_intc: interrupt-controller {
+    #interrupt-cells = <1>;
+    compatible = "mti,cpu-intc";
+    interrupt-controller;
+   };
+  };
+ };
+
+ sram0: memory@80200000 {
+  device_type = "memory";
+  compatible = "mmio-sram";
+  reg = <0x80200000 0x100000>;
+ };
+
+ uart2: serial@bf000900 {
+  compatible = "ns16550";
+  reg = <0xbf000900 0x40>;
+  reg-shift = <3>;
+  interrupt-parent = <&cpu_intc>;
+  interrupts = <4>;
+
+  clock-frequency = <1843200>;
+  current-speed = <115200>;
+  status = "okay";
+ };
+};
+# 0 "<command-line>" 2
+# 1 "/Users/bytelight/zephyr-course/zephyr/misc/empty_file.c"

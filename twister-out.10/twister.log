@@ -1,0 +1,17 @@
+2026-07-08 20:36:54,013 - twister - INFO - Using Ninja..
+2026-07-08 20:36:54,309 - twister - INFO - Zephyr version: v4.4.0-2553-g12782f1c9d77
+2026-07-08 20:36:54,338 - twister - DEBUG - Running cmake script /Users/bytelight/zephyr-course/zephyr/cmake/verify-toolchain.cmake
+2026-07-08 20:36:54,338 - twister - DEBUG - Calling cmake: /opt/homebrew/bin/cmake -DFORMAT=json -P /Users/bytelight/zephyr-course/zephyr/cmake/verify-toolchain.cmake
+2026-07-08 20:36:55,292 - twister - DEBUG - Finished running /Users/bytelight/zephyr-course/zephyr/cmake/verify-toolchain.cmake
+2026-07-08 20:36:55,292 - twister - INFO - Using 'zephyr/gnu' toolchain variant.
+2026-07-08 20:36:57,449 - twister - DEBUG - Reading testsuite configuration files under /Users/bytelight/zephyr-course/tests/calculator...
+2026-07-08 20:36:57,450 - twister - DEBUG - Found possible testsuite in /Users/bytelight/zephyr-course/tests/calculator
+2026-07-08 20:36:57,464 - twister - DEBUG - No duplicates found.
+2026-07-08 20:36:57,465 - twister - DEBUG -  platform filter: ['native_posix']
+2026-07-08 20:36:57,465 - twister - DEBUG - platform_pattern: []
+2026-07-08 20:36:57,465 - twister - DEBUG -    vendor filter: []
+2026-07-08 20:36:57,465 - twister - DEBUG -      arch_filter: None
+2026-07-08 20:36:57,465 - twister - DEBUG -       tag_filter: None
+2026-07-08 20:36:57,465 - twister - DEBUG -      exclude_tag: None
+2026-07-08 20:36:57,465 - twister - DEBUG - Checking platform filter: ['native_posix']
+2026-07-08 20:36:57,465 - twister - ERROR - platform_filter - unrecognized platform - native_posix
