@@ -1,0 +1,49 @@
+cmake:
+  application:
+    configuration-dir: '/home/afmondra/zephyr-course/tests/ring_buf'
+    source-dir: '/home/afmondra/zephyr-course/tests/ring_buf'
+  board:
+    name: 'native_sim'
+    path:
+     - '/home/afmondra/deps/zephyr/boards/native/native_sim'
+    qualifiers: 'native'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/afmondra/deps/zephyr/dts/bindings'
+    files:
+     - '/home/afmondra/deps/zephyr/boards/native/native_sim/native_sim.dts'
+    include-dirs:
+     - '/home/afmondra/deps/modules/hal/nxp/dts'
+     - '/home/afmondra/deps/modules/hal/stm32/dts'
+     - '/home/afmondra/deps/zephyr/include'
+     - '/home/afmondra/deps/zephyr/include/zephyr'
+     - '/home/afmondra/deps/zephyr/dts/common'
+     - '/home/afmondra/deps/zephyr/dts/vendor'
+     - '/home/afmondra/deps/zephyr/dts/rx'
+     - '/home/afmondra/deps/zephyr/dts/x86'
+     - '/home/afmondra/deps/zephyr/dts/xtensa'
+     - '/home/afmondra/deps/zephyr/dts/sparc'
+     - '/home/afmondra/deps/zephyr/dts/riscv'
+     - '/home/afmondra/deps/zephyr/dts/posix'
+     - '/home/afmondra/deps/zephyr/dts/arm64'
+     - '/home/afmondra/deps/zephyr/dts/arm'
+     - '/home/afmondra/deps/zephyr/dts/arc'
+     - '/home/afmondra/deps/zephyr/dts'
+  kconfig:
+    extra-user-files:
+     - '/home/afmondra/zephyr-course/twister-out/native_sim_native/host/homework.unit.ring_buf/twister/testsuite_extra.conf'
+    files:
+     - '/home/afmondra/deps/zephyr/boards/native/native_sim/native_sim_defconfig'
+     - '/home/afmondra/zephyr-course/tests/ring_buf/prj.conf'
+     - '/home/afmondra/zephyr-course/twister-out/native_sim_native/host/homework.unit.ring_buf/twister/testsuite_extra.conf'
+     - '/home/afmondra/zephyr-course/twister-out/native_sim_native/host/homework.unit.ring_buf/zephyr/misc/generated/extra_kconfig_options.conf'
+    user-files:
+     - '/home/afmondra/zephyr-course/tests/ring_buf/prj.conf'
+  toolchain:
+    name: 'host'
+    path: ''
+  zephyr:
+    version: '4.2.0'
+    zephyr-base: '/home/afmondra/deps/zephyr'
+version: '0.1.0'
